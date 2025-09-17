@@ -58,7 +58,7 @@ const ColorPicker: React.FC<ColorPickerProps> = ({
           ></div>
         </div>
 
-        {/* پنل رنگ فقط وقتی باز است */}
+     
         {open && (
           <motion.div
             className=""
@@ -89,7 +89,6 @@ const ColorPicker: React.FC<ColorPickerProps> = ({
           </motion.div>
         )}
 
-        {/* نمایش HEX رنگ */}
         <div
           className="absolute right-0 top-[11px] bg-[#37353E] p-2 rounded text-white font-semibold "
           onClick={() => navigator.clipboard.writeText(color)}

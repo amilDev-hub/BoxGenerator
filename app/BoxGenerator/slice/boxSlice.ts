@@ -17,7 +17,6 @@ export const boxSlice = createSlice({
   name: "boxSlice",
   initialState: {
     cards: [
-      // {id : 1  , widh :`${300}px` ,height:`${300}px`, background :'' }
       {
         id: 1,
         width: 300,

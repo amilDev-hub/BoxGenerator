@@ -1,4 +1,4 @@
-// convertStyleAndCopy.ts
+
 export const copyStyleToClipboard = (
   styleObj: Record<string, string | number>
 ) => {
