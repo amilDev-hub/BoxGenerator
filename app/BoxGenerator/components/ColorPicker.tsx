@@ -58,7 +58,6 @@ const ColorPicker: React.FC<ColorPickerProps> = ({
           ></div>
         </div>
 
-     
         {open && (
           <motion.div
             className=""
