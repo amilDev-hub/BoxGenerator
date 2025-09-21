@@ -10,7 +10,7 @@ html,
 body {
   background-color: '#D3DAD9';
   font-family: "Roboto";
-  overflow: hidden;
+  position: relative;
 }
 
 @font-face {

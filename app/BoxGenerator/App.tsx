@@ -74,7 +74,7 @@ const App = () => {
           </button>
         </div>
       </div>
-      <main className="w-full flex p-8 px-14 bg-[#D3DAD9]">
+      <main className="w-full flex p-8 pb-0 px-14 bg-[#D3DAD9]">
         <motion.div
           key={"boxsetting" + activeCard.id}
           className=" w-[800px] bg-[#2A2A2A] rounded-t-[10px] flex "
@@ -86,8 +86,8 @@ const App = () => {
             overflow: "",
           }}
         >
-          <div className="h-4/5 w-full items-end ">
-            <div className="w-full h-full flex flex-col gap-2 items-center justify-start p-2 px-5 ">
+          <div className=" w-full items-end overflow-auto">
+            <div className="w-full  flex flex-col gap-2 items-center justify-start p-2 px-5 ">
               <div className="bg-[#44444E] w-[200px] h-[43px] rounded-[25px] flex justify-center items-center  ">
                 <p className="text-white text-[23px] font-semibold py-2 ">
                   box settings
@@ -313,12 +313,12 @@ const App = () => {
           </div>
         </motion.div>
 
-        <div className="w-full  flex flex-col ">
+        <div className="w-full  flex flex-col items-center ">
           <div className="w-full h-1/2  flex justify-center items-center">
             <motion.div ref={shapeRef} style={style}></motion.div>
           </div>
 
-          <div className="w-full h-full flex justify-center">
+          <div className="w-full flex justify-center fixed  bottom-0">
             <div className="bg-[#2A2A2A] w-[500px] h-[150px] overflow-y-auto self-end flex flex-row flex-wrap justify-around rounded-t-lg p-2">
               <div className=" flex w-full items-start justify-around gap-2  p-2 flex-wrap">
                 {card.map((item) => {
