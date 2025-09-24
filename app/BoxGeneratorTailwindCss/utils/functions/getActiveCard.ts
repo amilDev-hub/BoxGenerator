@@ -5,7 +5,6 @@ import type { CardTailwind } from "../type/cardTailwindType";
 const getActiveCard = (arr : CardTailwind[]) : Promise<any> =>  {
   return new Promise((resolve) => {
     const card = arr.find((c) => c.active == true);
-    console.log(card);
     if(card){
         resolve(card)
     }
