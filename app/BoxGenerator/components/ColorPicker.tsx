@@ -69,7 +69,7 @@ const ColorPicker: React.FC<ColorPickerProps> = ({
           >
             <div
               ref={pickerRef}
-              className="absolute z-50 mt-2 -right-[310px] bg-[#2a2a2a] p-2 px-3 rounded-lg -top-[500px]  flex gap-1"
+              className="absolute z-50 mt-2 left-[10px] bg-[#2a2a2a] p-2 px-3 rounded-lg -bottom-[250px]  flex gap-1"
             >
               <HexColorPicker
                 className="p-1"

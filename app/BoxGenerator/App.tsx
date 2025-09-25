@@ -52,7 +52,7 @@ const App = () => {
   }, [card, dispatch]);
 
   return (
-    <>
+    <div className="min-h-[100vh]">
       <Header />
       <div className="w-full flex justify-end items-center py-3 p-3 bg-[#D3DAD9]">
         <div className="flex gap-2">
@@ -74,7 +74,7 @@ const App = () => {
           </button>
         </div>
       </div>
-      <main className="w-full flex p-8 pb-0 px-14 bg-[#D3DAD9]">
+      <main className="w-full flex p-8 pb-0 px-14 bg-[#D3DAD9] ">
         <motion.div
           key={"boxsetting" + activeCard.id}
           className=" w-[800px] bg-[#2A2A2A] rounded-t-[10px] flex "
@@ -86,7 +86,7 @@ const App = () => {
             overflow: "",
           }}
         >
-          <div className=" w-full items-end overflow-auto">
+          <div className=" w-full items-end overflow-auto h-[700px]">
             <div className="w-full  flex flex-col gap-2 items-center justify-start p-2 px-5 ">
               <div className="bg-[#44444E] w-[200px] h-[43px] rounded-[25px] flex justify-center items-center  ">
                 <p className="text-white text-[23px] font-semibold py-2 ">
@@ -360,7 +360,7 @@ const App = () => {
           </div>
         </div>
       </main>
-    </>
+    </div >
   );
 };
 
