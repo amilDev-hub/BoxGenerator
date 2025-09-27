@@ -18,7 +18,6 @@ const directionCreator = (directionObject: directionType) => {
 
     const align = directionObject.align.split("-")[1];
 
-    console.log(justify);
 
     objectDirecton.display = display;
 
@@ -29,7 +28,7 @@ const directionCreator = (directionObject: directionType) => {
     objectDirecton.alignItems = align;
     
   }
-  return objectDirecton;
+  return {...objectDirecton};
 };
 
 export default directionCreator;

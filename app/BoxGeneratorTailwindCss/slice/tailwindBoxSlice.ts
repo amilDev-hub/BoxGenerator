@@ -13,14 +13,14 @@ export const tailwindBoxSlice = createSlice({
         id: 1,
         active: true,
         border: {
-          borderWidth: 1,
-          borderColor: "#000000",
+          borderWidth: 5,
+          borderColor: "#166666",
           borderDirection: "all",
-          borderExmapel: 'border-dotted',
+          borderExmapel: 'border-solid',
         },
-        direction: {activeFlex : true , align : 'items-center' , direction : 'flex-col' , justify : 'justify-center'},
+        direction: {activeFlex : true , align : 'items-center' , direction : 'flex-row' , justify : 'justify-end'},
 
-        shadow :{activeInset : false , value :{  offsetX: 2, offsetY: 2, blur: 5, color:{r : 25 , g :10 , b : 0 , a : 0.50}} },
+        shadow :{activeInset : true , value :{  offsetX: 50, offsetY: 50, blur: 10, color:{r : 25 , g :50 , b : 42 , a : 0.50}} },
 
 
         workSpace :{backgroundColor : '#000000'},
@@ -34,7 +34,7 @@ export const tailwindBoxSlice = createSlice({
           borderWidth: 1,
           borderColor: "#000000",
           borderDirection: "all",
-          borderExmapel: 'border-dotted',
+          borderExmapel: 'border-solid',
         },
         direction: {activeFlex : true , align : 'items-center' , direction : 'flex-col' , justify : 'justify-center'},
 

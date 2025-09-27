@@ -16,7 +16,7 @@ const App = ()=>{
 
     return(
         <>
-         <div style={{    }}></div>
+         <div style={{}}></div>
         </>
     )
 }

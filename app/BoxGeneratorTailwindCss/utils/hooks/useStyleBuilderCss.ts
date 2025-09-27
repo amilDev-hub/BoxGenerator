@@ -1,5 +1,7 @@
+import borderCreator from "../functions/borderCreator";
 import directionCreator from "../functions/directionCreator";
 import shadowCreator from "../functions/shadowCreator";
+import sizeCreator from "../functions/sizeCreator";
 import type { CardTailwind } from "../type/cardTailwindType";
 
 const useStyleBuilderCss = (card: CardTailwind) => {
@@ -9,11 +11,13 @@ const useStyleBuilderCss = (card: CardTailwind) => {
 
   const direction = directionCreator(card.direction);
 
-  console.log(direction);
+  const border = borderCreator(card.border);
 
-  console.log(boxshadow);
+  const size = sizeCreator(card.size)
 
-  return direction;
+ 
+  
+  return {...boxshadow , ...border , ...size , ...direction};
 };
 
 export default useStyleBuilderCss;
